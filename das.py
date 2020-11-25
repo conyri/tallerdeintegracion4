@@ -29,14 +29,14 @@ def load_mongo_data(coll_name):
     for documents in data:
         print(documents)
 
-<<<<<<< Updated upstream
+
 st.write("Showing data for: ", coll_name)
 st.write(load_mongo_data(coll_name))
 st.write(db.coll_name.find())
 
 local_css("style.css")
 remote_css('https://fonts.googleapis.com/icon?family=Material+Icons')
-=======
+
  #select box
 metrics =['Atacama','','total_deaths','new_deaths','total_cases_per_million','new_cases_per_million','total_deaths_per_million','new_deaths_per_million','total_tests','new_tests','total_tests_per_thousand','new_tests_per_thousand']
 cols = st.selectbox('Covid metric to view', metrics)
@@ -51,4 +51,3 @@ st.markdown("### Covid-19 cases in India")
 st.markdown("The following table gives you a real-time analysis of the confirmed, active, recovered and deceased cases of Covid-19 pertaining to each state in India.")
 st.dataframe(datatable) # will display the dataframe
 st.table(datatable)# will display the table
->>>>>>> Stashed changes
