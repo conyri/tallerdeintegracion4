@@ -25,6 +25,7 @@ def region(nombre):
     x.append(cont)
 
   plt.scatter(x,y)
+  plt.title(nombre)
   plt.xlabel('Dias')
   plt.ylabel('Nuevos contagios')
   plt.show()
